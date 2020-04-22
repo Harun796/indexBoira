@@ -18,13 +18,13 @@ Doncs això passa amb molts textos, us passa alguna situació com aquesta:
 
 Això es va preguntar en [Robert Gunning](https://en.wikipedia.org/wiki/Gunning_fog_index) l'any 1952 i es va "enpescar" una fórmula per classificar els textos. La fórmula és:
 
-$$IndexBoira = 0.4 \times (MitjanaParaulesPerFrase-PercentatgeParaulesComplexes)$$ 
+IndexBoira = 0.4 * (MitjanaParaulesPerFrase-PercentatgeParaulesComplexes)
 
 On:
 
-$$mitjanaParaulesPerFrase = \frac{TotalParaulesText}{TotalFrases}$$
+mitjanaParaulesPerFrase = TotalParaulesText/TotalFrases
 
-$$percentatgeDeParaulesComplexes = \frac{totalParaulesLlargues}{totalParaulesText} \times 100$$
+percentatgeDeParaulesComplexes = totalParaulesLlargues/ totalParaulesText * 100
 
 A aquest índex el va anomenar índex de boira que té el text. **I quan més menor és  l'índex més fàcil de llegir és i més gran més complexe.**
 
@@ -50,6 +50,7 @@ Heu de tenir en compte possibles errors:
 Fins que usuari no compleixi aquestes condicions es va demanant el nom de l'arxiu.
 Com comprovar que un arxiu existeix mireu exemple:
 ```python3=
+import os.path
 if (os.path.isfile(nom)):
     print("És fitxer")
 else:
