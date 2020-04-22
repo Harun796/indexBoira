@@ -13,7 +13,7 @@ def comptarParaules(contingut):
 def comptarFrases(contingut):
   #TODO Heu de retornar el nombre de frases. 
   comptador = 0
-  for f in text:
+  for f in contingut:
     if(f=="." or f ==";" or f == ":"):
       comptador = comptador + 1
   #Com es separen les frases?
@@ -34,7 +34,7 @@ def numeroParulesComplexes(contingut):
   return complexos
 
 def percetantgeParaulesComplexes(contingut):
-  percentatge =100*((numeroParulesComplexes(contingut))/(comptarParaules(contingutt)))
+  percentatge =100*((numeroParulesComplexes(contingut))/(comptarParaules(contingut))
   return percentatge
 
 #TODO Fer-ho al final de tot el 5.
@@ -59,6 +59,8 @@ contingut= text.read()
 
 #Exercici 4
 #càlcul de la fórmula
+print(comptarParaules(contingut))
+print(comptarFrases(contingut))
 IndexBoira = 0.4 * (mitjanaParaulesPerFrase(contingut))(percetantgeParaulesComplexes(contingut))
 
 #TODO  Pinteu index per pantalla 
