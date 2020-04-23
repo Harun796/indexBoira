@@ -1,4 +1,5 @@
-
+perimers = [9,10,11,12]
+segons = [13,14,15,16,17]
 import os.path
 #Exercici2
 def comptarParaules(contingut):
@@ -69,9 +70,9 @@ elif(round(IndexBoira) == 7):
   print("Seventh grade")
 elif(round(IndexBoira) == 8):
   print("Eighth grade")
-elif(round(IndexBoira) == 9 or round(IndexBoira) == 10 or round(IndexBoira) == 11 or round(IndexBoira) == 12):
+elif(round(IndexBoira) in perimers):
   print("High school")
-elif(round(IndexBoira) == 13 or round(IndexBoira) == 14 or round(IndexBoira) == 15 or round(IndexBoira) == 16 or round(IndexBoira) == 17):
+elif(round(IndexBoira) in segons):
   print("College")
 #TODO Classifiqueu exercici segons índex
 # Digueu com és el text seguint la taula https://en.wikipedia.org/wiki/Gunning_fog_inde
